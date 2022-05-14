@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <script>
+        var c=["orange","blue","red","orange","green","gold"];
+      var ci=0;
+        function bgColorChange(){
+            var col=document.getElementById("body");
+            if(ci>=c.length){
+                ci=0;
+            }
+            col.style.backgroundColor=c[ci];
+            ci++;
+        }
+       
+    </script>
+     <body id="body">
+
+         <button style ="position: absolute;top:50%;left:50%;width: 5rem;padding: 10px;" onclick="bgColorChange();">Color</button>
+     </body>
+     
+</html>

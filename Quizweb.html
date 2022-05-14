@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        Q.1 What is 2+3?<br>
+        <input type="radio" name="question1" id="correct1">5<br>
+        <input type="radio" name="question1">8<br>
+        <input type="radio" name="question1">10<br>
+        <input type="radio" name="question1">12<br>
+
+        Q.2  What is 8+3?<br>
+        <input type="radio" name="question2">2<br>
+        <input type="radio" name="question2">8<br>
+        <input type="radio" name="question2" id="correct2">11<br>
+        <input type="radio" name="question2">12<br>
+
+        Q.3 What is 28+3?<br>
+        <input type="radio" name="question3">15<br>
+        <input type="radio" name="question3" id="correct3">31<br>
+        <input type="radio" name="question3">10<br>
+        <input type="radio" name="question3">19<br>
+
+        Q.4 What is 99+20?<br>
+        <input type="radio" name="question4">50<br>
+        <input type="radio" name="question4">199<br>
+        <input type="radio" name="question4">110<br>
+        <input type="radio" name="question4" id="correct4">119<br>
+    
+        <input type="submit" name="submit" value="Quizsubmit" onclick=" result() ">
+
+        <script type="Text/javascript">
+            function result() {
+                var score=0;
+                if(document.getElementById('correct1').checked){
+                    score++;
+                }
+                if(document.getElementById('correct2').checked){
+                    score++;
+                }
+                if(document.getElementById('correct3').checked){
+                    score++;
+                }
+                if(document.getElementById('correct4').checked){
+                    score++;
+                }
+                document.write("You got : "+score+",Congratulaions");
+            }
+        </script>
+
+
+
+
+    </body>
+</html>
